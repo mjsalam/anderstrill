@@ -1,6 +1,6 @@
 #-------------------------------
 # General Site Settings
-baseURL = "http://mjsalam.com"
+baseURL = "http://anderstrill.com"
 languageCode = "en-us"
 title = "MJSalam"
 googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
