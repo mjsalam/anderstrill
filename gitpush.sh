@@ -2,7 +2,7 @@
 
 
 IFS=$'\n'
-blog="/Users/msalam/Documents/hugo/mjsalam.com"
+blog="/Users/msalam/Documents/hugo/Anders Trill.com"
   
 cd $blog
 git add --all

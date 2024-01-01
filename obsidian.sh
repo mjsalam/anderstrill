@@ -2,10 +2,10 @@
 
 
 IFS=$'\n'
-blog="/Users/msalam/Documents/hugo/mjsalam.com"
-dir="/Users/msalam/Documents/hugo/mjsalam.com/content/posts"
+blog="/Users/msalam/Documents/hugo/Anders Trill.com"
+dir="/Users/msalam/Documents/hugo/Anders Trill.com/content/posts"
 obs="/Users/msalam/Library/Mobile Documents/com~apple~CloudDocs/MS Cloud/Vaults/MSalam.2023/"
-static="/Users/msalam/Documents/hugo/mjsalam.com/static/"
+static="/Users/msalam/Documents/hugo/Anders Trill.com/static/"
   
   
 cd $dir ; grep -rl 'publish: true' $obs |xargs -I {} cp {} $dir
