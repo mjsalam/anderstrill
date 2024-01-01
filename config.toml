@@ -1,0 +1,132 @@
+#-------------------------------
+# General Site Settings
+baseURL = "http://mjsalam.com"
+languageCode = "en-us"
+title = "MJSalam"
+googleAnalytics = "" # Add your identifier. For example UA-99631805-1.
+paginate = 9
+
+
+#-------------------------------
+# Main Menu
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "now"
+    name = "Now"
+    url = "/now"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact Me"
+    url = "/contact"
+    weight = 3
+
+  # [[menu.main]]
+  #  identifier = "styleguide"
+  #  name = "Style Guide"
+  #  url = "/styleguide"
+  #  weight = 4
+
+
+[params]
+  logo = "" # You can add own logo. For example "/images/logo.png".
+  description = "Music maker and sculptor of sonic landscapes."
+
+  [params.author]
+#   name = "Mark Salam"
+#   avatar = "/images/logo.png"
+
+  #-------------------------------
+  # Hero Settings
+  [params.hero]
+    hero__title = "Music maker and sculptor of sonic landscapes."
+    hero__description = "Composer, sound designer, technologist, and aspiring productive human."
+    hero__image = "/images/studio.png"
+
+  [[params.social]]
+    icon = "ion-logo-twitter"
+    name = "Twitter"
+    link = "https://twitter.com"
+
+  [[params.social]]
+    icon = "ion-logo-facebook"
+    name = "Facebook"
+    link = "https://facebook.com"
+
+  [[params.social]]
+    icon = "ion-logo-pinterest"
+    name = "Pinterest"
+    link = "https://pinterest.com"
+
+  [[params.social]]
+    icon = "ion-logo-dribbble"
+    name = "Dribbble"
+    link = "https://dribbble.com"
+
+  [[params.social]]
+    icon = "ion-logo-instagram"
+    name = "Instagram"
+    link = "https://instagram.com"
+
+  [[params.social]]
+    icon = "ion-logo-github"
+    name = "Github"
+    link = "https://github.com/"
+
+  # Example of adding a new link to the author section and footer:
+  # [[params.social]]
+  #   icon = "ion-logo-vimeo"
+  #   name = "Vimeo"
+  #   link = "https://vimeo.com"
+
+  # Other icons can be found at https://ionicons.com/v4/
+
+  #-------------------------------
+#   Newsletter (partials/footer-widgets/widget-subscribe.html)
+#  [params.mailchimp]
+#    mailchimp__title = "Get Interesting News"
+#    mailchimp__text = "Subscribe to our newsletter and we’ll send you the emails of latest posts."
+#    mailchimp__identifier = "" # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+#    mailchimp__button__text = "Subscribe" # Add your button text
+
+  #-------------------------------
+  # Contact Settings
+  [params.contact]
+    email = "f/mlekedkk" # Add your email for contant form
+
+    # NOTE
+    # Aditu comes with a built-in contact form, that you can use with Formspree service to handle up to 50 submissions per month for free. You could also easily switch to another contact form service if you want.
+
+  #-------------------------------
+  # Comment Section (Disqus)
+  #[params.disqus]
+  #  disqusShortname = "anvod-studio-aditu" # add your shortname for Disqus Comment. For example anvod-studio-aditu
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+
+[markup.highlight]
+  codeFences = true
+  guessSyntax = true
+  noClasses = false

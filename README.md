@@ -1,54 +1,48 @@
-# Hugo template for Decap CMS with Netlify Identity
+# Aditu – Dark Theme for HUGO Static Site Generator
 
-This is a small business template built with [Hugo](https://gohugo.io) and [Decap CMS](https://github.com/decaporg/decap-cms), designed and developed by [Darin Dimitroff](https://twitter.com/deezel), [spacefarm.digital](https://www.spacefarm.digital).
+Aditu is a stylish and modern dark theme with a clean and unique design, this theme is created for those who want to share their stories quickly and easily, as well as provide your readers with an unforgettable experience of viewing content.
 
-## Getting started
+* * *
 
-Use our deploy button to get your own copy of the repository. 
+### Demo
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/decaporg/one-click-hugo-cms&stack=cms)
+Check the theme in action [Live Demo](https://aditu-hugo.netlify.app/) |
+[Anvod Studio](https://themeforest.net/user/anvodstudio)
 
-This will setup everything needed for running the CMS:
+* * *
 
-* A new repository in your GitHub account with the code
-* Full Continuous Deployment to Netlify's global CDN network
-* Control users and access with Netlify Identity
-* Manage content with Decap CMS
+### Theme features
 
-Once the initial build finishes, you can invite yourself as a user. Go to the Identity tab in your new site, click "Invite" and send yourself an invite.
+- 100% responsive and clean theme
+- Valid HTML5
+- Optimized for mobile devices
+- Compatible with modern browsers
+- Super fast performance ⚡⚡⚡
+- Minimal Design
+- Social Sharing Buttons
+- Syntax Highlighting
+- Instant Search
+- Medium style image zoom
+- Gallery Support
+- Tags Support
+- Custom logo support
+- Ajax Load Posts
+- Supports Google Analytics
+- Supports Disqus Comments
+- Supports MailChimp newsletter
+- Ionicons Icons
+- Google Fonts
 
-Now you're all set, and you can start editing content!
+* * *
 
-## Local Development
+### Deployment
 
-Clone this repository, and run `yarn` or `npm install` from the new folder to install all required dependencies.
+To run the theme locally, navigate to the theme directory and run `hugo` to start building websites, then run `hugo server` or `hugo server --disableFastRender` to start the HUGO server.
 
-Then start the development server with `yarn start` or `npm start`.
+I would recommend checking the [Deployment Methods](https://gohugo.io/hosting-and-deployment/) page on HUGO website.
 
-## Testing
+* * *
 
-With the development server running, run the tests locally
-with `yarn cypress:run` or `npm run cypress:run`.
-Or use `yarn cypress:open` or `npm run cypress:open` to run interactively.
+### Documentation
 
-Cypress tests also run on deploy with the [Cypress Netlify integration](https://www.netlify.com/integrations/cypress/).
-
-## Layouts
-
-The template is based on small, content-agnostic partials that can be mixed and matched. The pre-built pages showcase just a few of the possible combinations. Refer to the `site/layouts/partials` folder for all available partials.
-
-Use Hugo’s `dict` functionality to feed content into partials and avoid repeating yourself and creating discrepancies.
-
-## CSS
-
-The template uses a custom fork of Tachyons and PostCSS with cssnext and cssnano. To customize the template for your brand, refer to `src/css/imports/_variables.css` where most of the important global variables like colors and spacing are stored.
-
-## SVG
-
-All SVG icons stored in `site/static/img/icons` are automatically optimized with SVGO (gulp-svgmin) and concatenated into a single SVG sprite stored as a a partial called `svg.html`. Make sure you use consistent icons in terms of viewport and art direction for optimal results. Refer to an SVG via the `<use>` tag like so:
-
-```
-<svg width="16px" height="16px" class="db">
-  <use xlink:href="#SVG-ID"></use>
-</svg>
-```
+Before using the Aditu theme, please read the attached documentation.

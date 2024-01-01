@@ -1,0 +1,33 @@
+
+<style>
+    #callout {
+        background: #262435;
+        padding: 1.5em 1.25em;
+        border-radius: 3px;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 20px;
+        font-size:medium;
+        line-height: 30px;
+    }
+
+    #callout-inner {
+        margin-left: 2em;
+    }
+
+    @media (max-width: 767px) {
+        #callout {
+            padding: 1.5em 0.75em 1.5em 0.6em;
+        }
+
+        #callout-inner {
+            margin-left: 0.5em;
+        }
+    }
+</style>
+<div id="callout">
+    <div>{{ .Get "emoji" }}</div>
+    <div id="callout-inner">
+        {{ .Inner  | markdownify }}
+    </div>
+</div>

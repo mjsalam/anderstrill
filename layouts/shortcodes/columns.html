@@ -1,0 +1,25 @@
+<div class="gdoc-columns flex flex-wrap flex-mobile-column">
+    <!-- Replace
+
+         <div class="column">
+         foo
+         </div>
+
+         with:
+
+         foo<--\>
+    -->
+    {{ $inner := (replaceRE `<div class="column">((.|\n)+?)\n</div>` "${1}<--->" .Inner) }}
+
+    <!-- Remove the last <--\>  -->
+    {{ $inner = (replaceRE `<--->\s*$` "" $inner) }}
+
+    <!-- Rest of the code is from the original shortcode defintion at
+         https://github.com/thegeeklab/hugo-geekdoc/blob/main/layouts/shortcodes/columns.html
+    -->
+    {{- range split $inner "<--->" }}
+        <div class="gdoc-columns__content gdoc-markdown--nested flex-even">
+            {{ . | $.Page.RenderString }}
+        </div>
+    {{ end -}}
+</div>
