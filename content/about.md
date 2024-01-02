@@ -6,6 +6,7 @@ title: About
 ![Time to think](/images/about.png)
 
 
+
 ➡ SOME BACKGROUND
 
  I live at the intersection of sound, technology, and productivity. They exist in some strange symbiotic relationship feeding (and at time hindering) each other.  
