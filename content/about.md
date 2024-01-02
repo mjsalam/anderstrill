@@ -13,4 +13,6 @@ title: About
 
  In terms of my day-to-day I work as a technology consultant in the areas of cloud, information security, and organizational change and effectiveness.  I also freelance as a music composer and sound designer for all manner of project.  The third "pillar" of productivity is another passion of mine and core to my efforts to keep the other two areas humming (in addition to my life outside of work).
 
+ {{< spotify type="album" id="5vqILcEeCT0N1DeJBsLrGE" width="100%" height="250" >}}
+
 ---
