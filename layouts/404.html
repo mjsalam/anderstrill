@@ -1,13 +1,14 @@
-{{ define "main" }}
-
-<div class="container animate">
-  <div class="row">
-    <div class="col col-12 error">
-      <h1 class="error__title">404</h1>
-      <p class="error__text">The requested page could not be found.</p>
-      <p><a href="/" class="button button--middle" style="text-decoration: none"><i class="ion ion-md-arrow-back"></i> Back to the blog</a></p>
-    </div>
-  </div>
+{{ partial "head.html" . }}
+<div class="wrapper">
+  <article class="container">
+    <header><h1>404</h1></header>
+    <section>
+      <p>Page not found! Recent articles are below or search the <a href="{{ .Site.Params.navbar.blog }}">archives</a>.</p>
+    </section>
+    <hr>
+    {{ range first 10 .Data.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+  </article>
 </div>
-
-{{ end }}
+{{ partial "footer.html" . }}

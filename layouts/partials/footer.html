@@ -1,28 +1,9 @@
-<!-- begin footer-widgets -->
-<section class="footer-widgets">
-  <div class="container">
-    <div class="row">
-      {{ partial "footer-widgets/widget-info.html" . }}
-      {{ partial "footer-widgets/widget-navigation.html" . }}
-<!--      {{ partial "footer-widgets/widget-subscribe.html" . }} -->
-    </div>
-  </div>
-</section>
-<!-- end footer-widgets -->
-
-<!-- begin footer -->
-<footer class="footer">
-
-  <div class="container">
-    <div class="row">
-      <div class="col col-12">
-        <div class="footer__inner">
-          {{ partial "social-links.html" . }}
-          <div class="copyright">{{ dateFormat "2006" now }} &copy; <a href="/">{{ .Site.Title }}</a>. All Right Reserved. Published with <a href="https://gohugo.io/">Hugo</a>.</div>
+    <footer id="site-footer">
+      <div class="container-fluid">
+        <div class="col-sm-12 text-muted">
+          <p id="footer-info" >Made with <i class='fa fa-heart-o'></i> by <a href="http://noahlange.com">Noah Lange</a>. Powered by <a href="http://hugo.spf13.com">Hugo</a>.</p>
         </div>
       </div>
-    </div>
-  </div>
-
-</footer>
-<!-- end footer -->
+    </footer>
+  </body>
+</html>

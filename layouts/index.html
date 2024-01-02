@@ -1,20 +1,22 @@
-{{ define "main" }}
-
-{{ partial "hero.html" . }}
-
-<div class="container">
-  <div class="row grid">
-
-    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
-    {{ range $paginator.Pages }}
-      {{ partial "article-content.html" . }}
-    {{ end }}
-
+{{ partial "head.html" . }}
+{{ partial "navbar.html" . }}
+{{ with .Site.Params.coverimage }}<div id="cover-page" data-stellar-background-ratio="0.25" style="background-image: url({{ . }})">{{ end }}
+  <div class="container">
+    {{ with .Site.Params.title }}<h1 class="cover-title">{{ . }}</h1>{{ end }}
+    {{ with .Site.Params.subtitle }}<h3 class="cover-subtitle">{{ . }}</h3>{{ end }}
   </div>
 </div>
-
-{{ partial "pagination.html" . }}
-
-{{< spotify type="album" id="5vqILcEeCT0N1DeJBsLrGE" width="100%" height="250" >}}
-
-{{ end }}
+<div class="index-wrapper">
+  <div id="main-container" class="container">
+    <div class="col-sm-12">
+      <article>
+        <h3>Recent Posts</h3>
+        <hr />
+        {{ range first 5 (where .Data.Pages "Section" "post") }}
+           {{ .Render "summary"}}
+        {{ end }}
+      </article>
+    </div>
+  </div>
+</div>
+{{ partial "footer.html" . }}
